@@ -13,10 +13,10 @@ from vk_api.keyboard import VkKeyboard
 from vk_api.bot_longpoll import VkBotLongPoll
 from vk_api.bot_longpoll import VkBotEventType
 
-key = '66ad8c5ffed24d0df68094a8bdc04b96b6868b6df748f1e87d8376188a2335e5b5d139247c530c4d48eb6'
+key = ''
 
 vk_session = vk_api.VkApi(token=key, api_version="5.103")
-longpoll = VkBotLongPoll(vk_session, '204198097') # '202793215' - dv # '201237497' - main
+longpoll = VkBotLongPoll(vk_session, '')
 vk = vk_session.get_api()
 users = vk.users
 upload = VkUpload(vk_session)
